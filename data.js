@@ -178,7 +178,7 @@ function allJobInfoCard() {
     cards.appendChild(divInfo);
   }
 }
-
-
 // Call the function to render
 allJobInfoCard();
+
+
