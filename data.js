@@ -3,23 +3,24 @@
 
 let jobs = [
   {
-    companyName: "BJIT Group", // Company name
-    position: "Software Engineer", // Job position
-    locationTypeSalary: "Dhaka, BD • Full-time • ৳70,000 - ৳120,000", // Location + job type + salary
-    description: "Develop scalable software solutions following clean code practices." // Job description
+    companyName: "bKash Limited",
+    position: "Web Application Developer",
+    locationTypeSalary: "Dhaka, BD • Full-time • ৳75,000 - ৳110,000",
+    description: "Develop secure and high-performance web applications for fintech users."
   },
+    {
+    companyName: "Daraz Bangladesh",
+    position: "Software Developer",
+    locationTypeSalary: "Dhaka, BD • Full-time • ৳70,000 - ৳115,000",
+    description: "Develop and optimize e-commerce platforms and internal tools."
+  }, 
   {
     companyName: "Pathao",
     position: "Backend Developer",
     locationTypeSalary: "Dhaka, BD • Full-time • ৳80,000 - ৳130,000",
     description: "Work with APIs, databases, and backend services using Node.js."
   },
-  {
-    companyName: "bKash Limited",
-    position: "Web Application Developer",
-    locationTypeSalary: "Dhaka, BD • Full-time • ৳75,000 - ৳110,000",
-    description: "Develop secure and high-performance web applications for fintech users."
-  }, 
+
   {
     companyName: "SSL Wireless",
     position: "UI/UX Designer",
@@ -37,12 +38,6 @@ let jobs = [
     position: "Full Stack Developer",
     locationTypeSalary: "Dhaka, BD • Full-time • ৳85,000 - ৳135,000",
     description: "Work across frontend and backend to deliver production-ready features."
-  },
-  {
-    companyName: "Daraz Bangladesh",
-    position: "Software Developer",
-    locationTypeSalary: "Dhaka, BD • Full-time • ৳70,000 - ৳115,000",
-    description: "Develop and optimize e-commerce platforms and internal tools."
   },
   {
     companyName: "Enosis Solutions",
@@ -120,10 +115,12 @@ let jobs = [
 
 
 
+
+
 // Select the container by id name
 // all job cards will be inserted
 
-const cards = document.getElementById("card-container");
+let cards = document.getElementById("card-container");
 
 // Function: Creates and renders
 // all job cards dynamically update from data of object
@@ -133,6 +130,7 @@ function allJobInfoCard() {
   // Loop through each job object in the jobs array
   for (let job of jobs) {
 
+  
     // Create a new div element
     let divInfo = document.createElement('div');
 
@@ -145,7 +143,7 @@ function allJobInfoCard() {
         <h2 class="companyName font-medium">
         ${job.companyName}
         </h2>
-        <button class="btn btn-soft rounded-full bg-white w-6 h-7 border-none">
+        <button class="delete-btn btn btn-soft rounded-full bg-white w-6 h-7 border-none">
           <i class="fa-regular fa-trash-can"></i>
         </button>
       </div>
@@ -178,6 +176,5 @@ function allJobInfoCard() {
     cards.appendChild(divInfo);
   }
 }
-// Call the function to render
-allJobInfoCard();
+
 
