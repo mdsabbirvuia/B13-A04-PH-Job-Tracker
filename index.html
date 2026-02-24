@@ -23,7 +23,7 @@
 
 <body class="bg-gray-100">
 
-<header id="header" class=" pt-10 pb-8 w-[75%] mx-auto space-y-2 border-b-2 border-gray-300">
+<header id="header" class="bg-gray-100  pt-10 pb-8 w-[75%] mx-auto space-y-2 border-b-2 border-gray-300 sticky z-10 top-0">
     <h1 class="text-2xl font-extrabold ">Job Application Tracker</h1>
     
     <div class="grid grid-cols-3 gap-4">
@@ -51,11 +51,11 @@
             <p id="available-jobs" class="text-gray-400 text-sm"><span class="total-count">0</span> jobs</p>
         </div>
 
-        <div class="flex justify-start gap-3  ">
+        <div class="flex justify-start gap-3">
             
-            <button onclick="toggulButton('all-btn'),showOnly('card-container')" id="all-btn" class=" border rounded-md px-9 py-2.5 btn bg-blue-400 text-white">All</button>
-            <button onclick="toggulButton('interview-btn'),showOnly('interview-container')" id="interview-btn" class="border rounded-md px-4 py-2.5 btn bg-white text-gray-400">Interview</button>
-            <button onclick="toggulButton('rejected-btn'),showOnly('rejected-container')" id="rejected-btn" class="border rounded-md px-4 py-2.5 btn bg-white text-gray-400">Rejected</button> 
+            <button onclick="toggulButton('all-btn'), showOnly('card-container')" id="all-btn" class=" border rounded-md px-9 py-2.5 btn bg-blue-400 text-white">All</button>
+            <button onclick="toggulButton('interview-btn'), showOnly('interview-container')" id="interview-btn" class="border rounded-md px-4 py-2.5 btn bg-white text-gray-400">Interview</button>
+            <button onclick="toggulButton('rejected-btn'), showOnly('rejected-container')" id="rejected-btn" class="border rounded-md px-4 py-2.5 btn bg-white text-gray-400">Rejected</button> 
 
         </div>
     </section>
@@ -64,27 +64,11 @@
     </section>
     
     <section id="interview-container" class="w-[75%] mx-auto space-y-5 hidden">  
-        <div class="no-jobs flex flex-col space-y-5 bg-white py-16 px-10 rounded-md ">
-            <div class="flex justify-center">
-                <img src="./assets/jobs.png" alt="">
-            </div>
-            <div class="text-center">
-                <h1 class="text-xl font-medium">No jobs available</h1>
-                <p class="text-[14px] text-gray-500">Check back soon for new job opportunities</p>
-            </div>
-        </div>
+
     </section>
 
     <section id="rejected-container" class="w-[75%] mx-auto space-y-5 hidden ">  
-        <div class="no-jobs flex flex-col space-y-5 bg-white py-16 px-10 rounded-md ">
-            <div class="flex justify-center">
-                <img src="./assets/jobs.png" alt="">
-            </div>
-            <div class="text-center">
-                <h1 class="text-xl font-medium">No jobs available</h1>
-                <p class="text-[14px] text-gray-500">Check back soon for new job opportunities</p>
-            </div>
-        </div>
+
     </section>
 </main>
 

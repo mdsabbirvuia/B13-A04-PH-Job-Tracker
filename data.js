@@ -1,7 +1,7 @@
 // Job data list 
 // Each object represents one job card
 
-const jobs = [
+let jobs = [
   {
     companyName: "BJIT Group", // Company name
     position: "Software Engineer", // Job position
@@ -141,35 +141,35 @@ function allJobInfoCard() {
 
     // Insert job data into HTML element using element innerHTML
     divInfo.innerHTML =`
-      <div class="flex justify-between">
-        <h2 class="companyName font-medium">${job.companyName}</h2>
-        <button class="btn rounded-full px-1 h-0.5 bg-white border-none">
+      <div class="jobInfo flex justify-between items-center">
+        <h2 class="companyName font-medium">
+        ${job.companyName}
+        </h2>
+        <button class="btn btn-soft rounded-full bg-white w-6 h-7 border-none">
           <i class="fa-regular fa-trash-can"></i>
         </button>
       </div>
 
-      <p class="position text-gray-400 text-base">${job.position}</p>
+      <p class="position text-gray-400 text-base">
+         ${job.position}
+      </p>
 
       <p class="adress-type-salary text-gray-400 font-light text-sm">
         ${job.locationTypeSalary}
       </p>
 
-      <!-- Job application status -->
-      <div class="stetus bg-sky-100 w-[110px] hight-[35px] py-3 px-2 rounded-md">
-        <p class="font-medium text-xs text-center">NOT APPLIED</p>
-      </div>
+     <div class="statusbar badge badge-soft badge-info px-2 py-3">Not Applied</div>
 
       <p class="description text-black/80 font-normal text-sm">
         ${job.description}
       </p>
 
-      <!-- Action buttons -->
       <div class="flex gap-2">
-        <button class="interview-btn btn btn-outline btn-success">
+        <button  class="interview-card-btn btn btn-outline btn-success">
           Interview
         </button>
 
-        <button class="rejected-btn btn btn-outline btn-error">
+        <button  class="rejected-card-btn btn btn-outline btn-error">
           Rejected
         </button>
       </div>
@@ -180,5 +180,4 @@ function allJobInfoCard() {
 }
 // Call the function to render
 allJobInfoCard();
-
 
