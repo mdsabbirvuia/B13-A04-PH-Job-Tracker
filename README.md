@@ -3,24 +3,24 @@
 
 ### 1. What is the difference between getElementById, getElementsByClassName, and querySelector / querySelectorAll?
 
-### Ans: getElementById is use to find element by id name but id is unique name so only One element can select on the other hand getElementByClass can select many elements by class name, querySelector or querySelectorAll both call by class element but the main difference querySelector select first matching element and querySelectorAll can selects all matching elements.
+# Ans: getElementById is use to find element by id name but id is unique name so only One element can select on the other hand getElementByClass can select many elements by class name, querySelector or querySelectorAll both call by class element but the main difference querySelector select first matching element and querySelectorAll can selects all matching elements.
 
 ### 2. How do you create and insert a new element into the DOM?
 
-### Ans: use createElemenr() create new element in the DOM and new element push inside parent element by appendChild as a childelemet.
+# Ans: use createElemenr() create new element in the DOM and new element push inside parent element by appendChild as a childelemet.
 
 ### 3. What is Event Bubbling? And how does it work?
 
-### Ans: Event Bubbling is basically work like upper roadmao find if I start an event in a element it act like children element now event Bubbling work like movvs up to the parent element.
+# Ans: Event Bubbling is basically work like upper roadmao find if I start an event in a element it act like children element now event Bubbling work like movvs up to the parent element.
 
 ### 4. What is Event Delegation in JavaScript? Why is it useful?
 
-## Ans: Event Delegates can detect of event area or as an event listenr on a parent to handel event of Child element. 
+# Ans: Event Delegates can detect of event area or as an event listenr on a parent to handel event of Child element. 
 
 
 ### 5. What is the difference between preventDefault() and stopPropagation() methods?
 
-## Ans: preventDefault() stop the main default work of event annd stopPropagathin() stops event bubbling couse event not go to parent.
+# Ans: preventDefault() stop the main default work of event annd stopPropagathin() stops event bubbling couse event not go to parent.
 
 ---
 
